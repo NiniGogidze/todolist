@@ -1,0 +1,116 @@
+body {
+    background-color: #ececec;
+}
+  
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+  
+.main-container {
+    margin-top: 30px;
+    width: 520px;
+}
+  
+.main-container input {
+    font-size: 16px;
+    font-family: "Inter";
+    color: rgba(147, 147, 147, 1);
+    width: 381px;
+    height: 68px;
+    border: 0px;
+    border-radius: 12px;
+    background-color: rgba(229, 229, 231, 1);
+    padding-left: 14px;
+}
+  
+.input-container {
+    display: flex;
+}
+  
+.input-container button {
+    width: 124px;
+    height: 68px;
+    font-family: "Inter";
+    font-size: 16px;
+    color: #939393;
+    background-color: rgba(229, 229, 231, 1);
+    border: 0px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+  
+.list input[type="checkbox"] {
+    width: 19px;
+    height: 19px;
+    accent-color: rgba(67, 72, 81, 1);
+    mix-blend-mode: multiply;
+    cursor: pointer;
+}
+  
+.list {
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    width: 510px;
+    height: 49px;
+    align-items: center;
+    margin-top: 28px;
+    position: relative;
+}
+  
+.list p {
+    color: #000;
+    font-family: "Inter";
+    font-size: 15px;
+    width: 414px;
+}
+  
+.list div {
+    display: flex;
+    gap: 14px;
+    margin-left: 17px;
+    align-items: center;
+}
+  
+.colorful-divs {
+    width: 11px;
+    height: 11px;
+    border-radius: 4px;
+    position: absolute;
+    right: 14px;
+    border: 2px solid transparent;
+}
+  
+.list:nth-child(3n + 1) .colorful-divs {
+    border-color: rgba(255, 73, 73, 1);
+}
+  
+.list:nth-child(3n + 2) .colorful-divs {
+    border-color: rgba(40, 167, 69, 1);
+}
+  
+.list:nth-child(3n) .colorful-divs {
+    border-color: rgba(0, 123, 255, 1);
+}
+
+.list p.checked {
+    text-decoration: line-through;
+}
+
+.list input[type="checkbox"]:checked ~ p {
+    text-decoration: line-through;
+}
+
+.colorful-divs.grey-border {
+    border-color: grey;
+}
+
+.list .colorful-divs.grey-border {
+    border-color: #e0e0e0;
+}
+
+.list-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
